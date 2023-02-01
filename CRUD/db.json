@@ -2,47 +2,20 @@
   "tasks": [
     {
       "id": 1,
-      "description": "task1",
+      "title": "Task1",
+      "description": "info about task1",
       "isDone": false
     },
     {
-      "id": 2,
-      "description": "qweqweqw",
+      "id": "823eed9d-42ab-ef5f-5dc9-4173dfde2995",
+      "title": "sadsad",
+      "description": "asdsadsad",
       "isDone": false
     },
     {
-      "id": 3,
-      "description": "weqwewqeqweqweqwe",
-      "isDone": false
-    },
-    {
-      "id": 6,
-      "description": "wqeqewq",
-      "isDone": false
-    },
-    {
-      "id": 8,
-      "description": "wqewqe",
-      "isDone": false
-    },
-    {
-      "id": 9,
-      "description": "hei buis",
-      "isDone": false
-    },
-    {
-      "id": "b5a4af86-2d1b-f379-2e8b-861f9b8538d4",
-      "description": "wqewqe",
-      "isDone": false
-    },
-    {
-      "id": "78d87f7b-3851-7194-128b-4461c05014d4",
-      "description": "qweeqw",
-      "isDone": false
-    },
-    {
-      "id": "6e9cf4e9-a416-4198-1313-261b9e9c0cfe",
-      "description": "qwewqe",
+      "id": "a6d34e20-f02d-93be-65dc-f7ae7ba89ec4",
+      "title": "a",
+      "description": "",
       "isDone": false
     }
   ]

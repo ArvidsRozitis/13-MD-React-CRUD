@@ -1,33 +1,49 @@
 * {
   box-sizing: border-box;
 }
-
-body {
-  margin: 0;
+:root {
+  background-color: #242424;
+  
+}
+.App {
+  margin: 0 auto;
   display: flex;
-  padding: 50px;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  font-family: sans-serif;
 }
-
+.addTask__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: grey;
+  font-weight: 550;
+  text-indent: 10px;
+}
+.addTask__heading {
+  font-size: 1.5rem;
+}
 .addTask__form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 15px;
+  background-color: #3C3E44;
+  border-radius: 10px;
 }
 .button {
   display: flex;
   margin: 0 auto;
   padding: 6px 12px;
-  background-color: #1a1a1a;
+  background-color: #000000;
   color: whitesmoke;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -37,8 +53,67 @@ body {
   transition: border-color 0.25s;
 }
 .button:hover {
-  border: 1px solid #747bff;
-  background-color: #1a1a1a;
+  border: 1px solid #b67224;
+  background-color: #929292;
+  color: black;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+.task__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.task__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2f33;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  min-width: 300px;
+  min-height: 150px;
+
+}
+.task__item:hover {
+  border: 1px solid #747bff;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+}
+.task__picture {
+  width: 50px;
+}
+.task__title {
+  font-size: 1.125rem;
+  font-weight: bolder;
+  letter-spacing: 0.05rem;
+}
+.task__description {
+  color: #cfcfcf;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+  text-indent: 20px;
+  text-align:left;
+}
+.task__upper-wraper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.task__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.button__task {
+  margin: 0 auto;
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 3px 6px;
+  border-radius: 20px;
 }
