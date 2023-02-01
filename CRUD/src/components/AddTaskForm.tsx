@@ -3,7 +3,7 @@ import { Task } from "../App";
 import axios from "axios";
 import uuid from "react-uuid";
 
-const AddTaskForm = ({setTasks}: any) => {
+const AddTaskForm = ({ setTasks }: any) => {
   const [taskTitle, setTitle] = useState<string>("");
   const [taskDescription, setTaskDescription] = useState<string>("");
 
@@ -34,6 +34,7 @@ const AddTaskForm = ({setTasks}: any) => {
       <label className="addTask__label">
         Task title
         <input
+          required
           type="text"
           className="addTask__input"
           placeholder="Task title"
@@ -48,6 +49,7 @@ const AddTaskForm = ({setTasks}: any) => {
       <label className="addTask__label">
         Task description
         <input
+          required
           type="text"
           className="addTask__input"
           placeholder="Task description"

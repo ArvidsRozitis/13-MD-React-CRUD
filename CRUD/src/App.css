@@ -3,7 +3,6 @@
 }
 :root {
   background-color: #242424;
-  
 }
 .App {
   margin: 0 auto;
@@ -14,7 +13,6 @@
   background-color: #242424;
   color: rgba(255, 255, 255, 0.87);
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
   font-family: sans-serif;
 }
@@ -36,7 +34,7 @@
   min-width: 200px;
   min-height: 200px;
   padding: 15px;
-  background-color: #3C3E44;
+  background-color: #3c3e44;
   border-radius: 10px;
 }
 .button {
@@ -68,13 +66,13 @@
 .task__item {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   background-color: #2d2f33;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid transparent;
-  min-width: 300px;
+  width: 300px;
   min-height: 150px;
-
 }
 .task__item:hover {
   border: 1px solid #747bff;
@@ -94,7 +92,7 @@
   font-size: 0.875rem;
   letter-spacing: 0.05rem;
   text-indent: 20px;
-  text-align:left;
+  text-align: left;
 }
 .task__upper-wraper {
   display: flex;
