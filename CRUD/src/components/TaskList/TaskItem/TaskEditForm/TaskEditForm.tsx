@@ -65,10 +65,3 @@ export const TaskEditForm = ({ taskId, taskTitle, taskDescription, setTasks, ind
   };
 
 export default TaskEditForm
-
-const UpdateTaskButton = () => {
-  return (
-    <>
-    </>
-  )
-}
