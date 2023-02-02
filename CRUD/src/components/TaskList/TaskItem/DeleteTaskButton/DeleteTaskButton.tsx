@@ -1,4 +1,4 @@
-import { Task } from "../App";
+import { Task } from "../../../../App";
 import axios from "axios";
 
 export const DeleteTaskButton = ({ id, setTasks }: number | any) => {

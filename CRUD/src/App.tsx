@@ -3,8 +3,8 @@ import uuid from "react-uuid";
 import { useState, useEffect } from "react";
 import "./App.css";
 import "./assets/styles/reset.css";
-import TaskList from "./components/TaskList";
-import AddTaskForm from "./components/AddTaskForm";
+import TaskList from "./components/TaskList/TaskList";
+import AddTaskForm from "./components/AddTaskForm/AddTaskForm";
 
 interface Task {
   id: string;

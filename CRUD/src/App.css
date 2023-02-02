@@ -115,3 +115,56 @@
   padding: 3px 6px;
   border-radius: 20px;
 }
+
+.taskEdit__form{
+  
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2d2f33;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  width: 300px;
+  min-height: 150px;
+  z-index: 2;
+}
+.taskEdit__form--hiden {
+  display: none;
+}
+.taskEdit__inputfield {
+  all: unset;
+  background-color: #242424;
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  text-indent: 0px;
+  align-items: center;
+}
+.taskEdit__inputfield:focus {
+  border: 1px solid #747bff;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+}
+.taskEdit__inputfield--title {
+  font-size: 1.2rem;
+  padding: 4px 8px;
+}
+.taskEdit__inputfield--description {
+  font-size: 0.8rem;
+  padding: 4px;
+}
+
+.editTask__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: grey;
+  font-weight: 300;
+  text-indent: 5px;
+}
+.task__item--container {
+  position: relative;
+}

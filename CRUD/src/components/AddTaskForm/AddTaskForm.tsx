@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Task } from "../App";
+import { Task } from "../../App";
 import axios from "axios";
 import uuid from "react-uuid";
 
@@ -15,7 +15,7 @@ const AddTaskForm = ({ setTasks }: any) => {
       isDone: false,
     };
     axios.post<Task>(`http://localhost:3004/tasks`, newTask).then(() => {
-      console.log("notika");
+      console.log("add notika");
       setTitle("");
       setTaskDescription("");
       axios.get<Task[]>("http://localhost:3004/tasks").then(({ data }) => {
