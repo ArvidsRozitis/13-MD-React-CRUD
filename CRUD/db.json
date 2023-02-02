@@ -1,13 +1,7 @@
 {
   "tasks": [
     {
-      "id": "3e09666a-5a57-54ec-0d1f-bb00d3e1c730",
-      "title": "Pievienošu vēl vienu",
-      "description": " Testa teksts. Testa teksts. Testa teksts. Testa teksts. Testa teksts.",
-      "isDone": false
-    },
-    {
-      "title": "Pamēģināsim izaminīt",
+      "title": "Jāuzraksta pareizi Nodaukums",
       "description": "Izmainīsim arī šo tekstu",
       "id": "a8e764ea-5370-ca62-5f6e-6ebc9b5a4727"
     },

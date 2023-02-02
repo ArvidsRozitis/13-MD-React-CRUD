@@ -115,9 +115,13 @@
   padding: 3px 6px;
   border-radius: 20px;
 }
+.task__item--container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
 
 .taskEdit__form{
-  
   top: 0px;
   left: 0px;
   display: flex;

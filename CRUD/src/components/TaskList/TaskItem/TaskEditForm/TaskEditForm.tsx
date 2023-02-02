@@ -5,7 +5,7 @@ import { Task } from "../../../../App";
 export const TaskEditForm = ({ taskId, taskTitle, taskDescription, setTasks, index }: any) => {
   const [newTaskTitle, setnewTaskTitle] = useState<string>(taskTitle);
   const [newTaskDescription, setNewTaskDescription] = useState<string>(taskDescription)
-  
+
   const updateTaskHandler = () => {
     axios.put<Task>(`http://localhost:3004/tasks/${taskId}`,{
       title: newTaskTitle,
@@ -19,7 +19,6 @@ export const TaskEditForm = ({ taskId, taskTitle, taskDescription, setTasks, ind
       });
     });
   };
-
     return (
       <form 
         className="taskEdit__form"
