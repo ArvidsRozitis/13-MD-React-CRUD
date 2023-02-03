@@ -3,31 +3,24 @@ import { Task } from "../../App";
 import axios from "axios";
 import uuid from "react-uuid";
 
-const AddTaskForm = ({ setTasks }: any) => {
-  const [taskTitle, setTitle] = useState<string>("");
-  const [taskDescription, setTaskDescription] = useState<string>("");
+type AddTasksFormProps = {
+  onSubmit: (title: string, description: string) => void
+}
 
-  const addTaskHandler = () => {
-    const newTask = {
-      id: uuid(),
-      title: taskTitle,
-      description: taskDescription,
-      isDone: false,
-    };
-    axios.post<Task>(`http://localhost:3004/tasks`, newTask).then(() => {
-      console.log("add notika");
-      setTitle("");
-      setTaskDescription("");
-      axios.get<Task[]>("http://localhost:3004/tasks").then(({ data }) => {
-        setTasks(data);
-      });
-    });
-  };
+const AddTaskForm = ({ onSubmit }: AddTasksFormProps) => {
+  const [taskTitle, setTitle] = useState("");
+  const [taskDescription, setTaskDescription] = useState("");
+
+
+
   return (
     <form
       className="addTask__form"
       onSubmit={(e) => {
         e.preventDefault();
+        onSubmit(taskTitle, taskDescription)
+        setTitle('')
+        setTaskDescription('')
       }}
     >
       <h3 className="addTask__heading">Add new Task</h3>
@@ -61,7 +54,7 @@ const AddTaskForm = ({ setTasks }: any) => {
           }}
         />
       </label>
-      <button className="button button__addTask" onClick={addTaskHandler}>
+      <button className="button button__addTask">
         add
       </button>
     </form>
